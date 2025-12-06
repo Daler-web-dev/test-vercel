@@ -14,7 +14,7 @@ export default async function Posts() {
 				Posts
 			</h1>
 			<ul className="font-[family-name:var(--font-geist-sans)] max-w-2xl space-y-4">
-				{posts.map((post) => (
+				{posts.map((post: any) => (
 					<li key={post.id}>
 						<Link href={`/blog/posts/${post.id}`}>
 							<span className="font-semibold">{post.title}</span>
